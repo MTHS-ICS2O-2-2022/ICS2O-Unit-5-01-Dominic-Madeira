@@ -20,5 +20,13 @@ function myButtonClicked() {
   if (numberGuessed == randomNumber) {
 
   // output
-  document.getElementById('answer').innerHTML = numberGuessed
+  document.getElementById('answer').innerHTML = 'You Are Correct! The Number Was ' + randomNumber + '!'
+  }
+
+  // process
+    if (numberGuessed != randomNumber) {
+
+  // output
+  document.getElementById('answer').innerHTML = 'Wrong Try Again!'
+  }
 }
