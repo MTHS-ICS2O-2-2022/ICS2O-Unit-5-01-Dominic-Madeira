@@ -28,24 +28,24 @@ func main() {
 	r1 := rand.New(s1)
   random := r1.Intn(6) + 1
 
-//  This program is an infinite loop until you guess the correct number.
-//  for input != random {
-//    fmt.Println("You guessed incorrectly.")
-//    fmt.Println()
-//    fmt.Print("Please enter a number: ")
-//    fmt.Scanln(&input)
-//  }
-
-//   fmt.Println("You guessed correctly!")
-
-
-  // This program is a loop that will only run once.
-  if input == random {
-    fmt.Println("You guessed correctly!")
-  } 
-  if input != random {
-    fmt.Println("You guessed incorrectly.")
+  // This program is an infinite loop until you guess the correct number.
+  for input != random {
+    fmt.Println("You have guessed incorrectly.")
+    fmt.Println()
+    fmt.Print("Please enter a number: ")
+    fmt.Scanln(&input)
   }
+
+  fmt.Println("You have guessed correctly! The number was", random)
+
+  // // This program is a loop that will only run once.
+  // if input == random {
+  //   fmt.Println("You guessed correctly!")
+  // } 
+  
+  // if input != random {
+  //   fmt.Println("You guessed incorrectly.")
+  // }
 
   fmt.Println("\nDone.")
 }
