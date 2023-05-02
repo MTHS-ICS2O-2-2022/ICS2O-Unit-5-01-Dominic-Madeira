@@ -4,7 +4,6 @@
 // This program is a game where you guess a number from 1-6 and try to match the computer's number.
 package main
 
-
 import (
   "fmt"
   "math/rand"
