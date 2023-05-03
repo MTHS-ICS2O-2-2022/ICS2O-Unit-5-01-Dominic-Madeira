@@ -34,7 +34,7 @@ func main() {
 
 	fmt.Println("You have guessed correctly! The number was", random)
 
-	// // This program is a loop that will only run once.
+	// // This program is a loop that will only run once. (With if statements)
 	// if input == random {
 	//   fmt.Println("You guessed correctly!")
 	// }
